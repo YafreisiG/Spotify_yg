@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="shortcut icon" href="img/Spotify.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+</head>
+
+<body class="bg-white dark:bg-slate-500 text-slate-900 dark:text-white bg-gradient-to-r from-green-500 via-green-600 to-black">
+
+
+    <!--Menu Principal-->
+<nav class="z-20 bg-white dark:bg-slate-800 fixed md:static w-full md:w-auto border-b md:border-none shadow-lg md:shadow-none dark:border-none">
+     <div class="p-6 container mx-auto">
+          <div class="flex items-center justify-between">
+            
+                 <!---Imagenes/Logo-->
+
+                 <div class="z-20 flex items-center">
+                    <a href="#" class="flex items-center">
+                      <img src="img/Spotify-Icon-Logo.wine.svg" alt="Logo" class="w-14 h-14"> <!-- 56x56px -->        
+                      <span class="text-3xl ml-3"><span class="font-bold"> Spotify&reg;</span> Music & Postcats</span>
+                    
+                    </a>
+                  </div>
+
+
+
+                  <!--Cuerpo-->
+                  <div>
+                    <!--Botones-->
+                    <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
+                   
+                    <label for="hamburger" class="peer-checked:hamburger block z-20 cursor-pointer md:hidden transition p-5 hover:bg-gray-200 dark:hover:bg-slate-700 rounded">
+                        <div class="h-0.5 w-6 bg-black dark:bg-white transition"></div>
+                        <div class="mt-2 h-0.5 w-6 bg-black dark:bg-white transition"></div>
+                    </label>
+
+
+                    <!--Enlances-->
+                    <div class="bg-white dark:bg-slate-900 dark:md-bg-slate-800 w-3/5 shadow-lg transition flex flex-col justify-between fixed inset-0 translate-x-[-100%] peer-checked:translate-x-0 md:w-auto md:static md:shadow-none md:translate-x-0 md:flex-row">
+
+                        <!---Botones de Enlaces-->
+                        <div class="px-6 pt-32 flex-col md:flex-row md:items-center gap-4 md:p-0">
+                            <a href="" class="tracking-wide cursor-pointer px-3 py-3 rounded font-semibold text-lg transition hover:text-white hover:bg-green-500"> Caracteristica</a>
+                            <a href="" class="tracking-wide cursor-pointer px-3 py-3 rounded font-semibold text-lg transition hover:text-white hover:bg-green-500"> Ayuda</a>
+                            <a href="" class="tracking-wide cursor-pointer px-3 py-3 rounded font-semibold text-lg transition hover:text-white hover:bg-green-500"> Componentes</a>
+                            <a href="" class="tracking-wide cursor-pointer px-3 py-3 rounded font-semibold text-lg transition hover:text-white hover:bg-green-500"> Idiomas</a>
+                        </div>
+
+                        <!--boton-->
+                        <div class="block md:hidden border-t py-8 px-9 md:border-t-0 dark:border-slate-700 md:py-0 md:pr-0 md:pl-6">
+                              <a href="" class="block px-6 py-5 rounded text-center text-white text-lg font-semibold transition bg-green-400 hover:bg-green-500">Descargar</a>
+                        </div>
+
+                    </div>
+
+                  </div>
+                  
+         
+            </div>
+      </div>
+    </nav>
+
+    <!--Hero-->
+    <div class="container mx-auto flex px-5 md:py-24 md:flex-row flex-col items-center relative pt-40">
+
+        <!--Cuerpo-->
+        <div class="lg:flex-grow md:w-1/2 lg:pr-32 md:pb-0 flex-col md:items-start md:text-left items-center text-center pb-5">
+
+            <!---Texto-->
+            <h1 class="lg:text-6x1 text-5xl mb-4 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+            <p class="mb-8 leading-relaxed text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non?</p>
+
+
+            <!--botones-->
+            <div class="flex xl:flex-row md:flex-col flex-wrap w-full justify-center xl:justify-start gap-10 md:gap-0">
+
+                <button class="btn-dowloand">
+                    <img src="img/Windows.png" alt="" class="w-10 h-10">
+                    <span class="ml-4 flex items-start flex-col leading-none text-white">
+                        <span class="text-xs uppercase">Instalar en </span>
+                       <span class="font-medium text-xl"> Windows</span>
+                    </span>
+                </button>
+
+                <button class="btn-dowloand xl:ml-4 md:mt-4 mt-0 xl:mt-0">
+                    <img src="img/AppleStore.png" alt="" class="w-10 h-10">
+                    <span class="ml-5 flex items-start flex-col leading-none text-white">
+                        <span class="text-xs uppercase">Instalar en </span>
+                      <span class="font-medium text-xl">Mac OS</span>
+                  </span>
+            </button>
+
+            </div>
+
+        </div>
+
+        <!--imagenes-->
+        <div class="hidden md:block lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"> 
+            <img src="img/hero.png" alt="" class="object-cover object-center rounded">
+        </div>
+
+
+        <!--fondo-->
+        <img src="img/hero1.png" alt="" class="hidden md:block absolute right-0 xl:w-1/2  lg:w-[80%] md:w-[55%] -z-10">
+    </div>
+
+    <!--titulo-->
+    <div class="container mx-auto py-28 w-10/12 md:w-8/12">
+        <h1 class="sm:text-5xl text-4xl mb-4 font-medium text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam at doloribus non!</h1>
+    </div>
+
+    <!--cuerpo de la pagina-->
+    <section>
+        <div class="container mx-auto flex px-8 lg:py-20 py-14 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 flex flex-col items-start text-left mb-16 md:mb-0">
+                <h1 class="sm:text 4xl text-3xl mb-4 font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis?</h1>
+                <p class="mb-8 leading-relaxed text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius labore magni asperiores dolor beatae dolores quos?</p>
+
+            </div>
+
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img src="img/imgenes1.png" alt="" class="object-cover object-center rounded shadow-xl">
+
+            </div>
+
+        </div>
+
+        <div class="container mx-auto flex px-8 lg:py-20 py-14 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 md:pl-16 flex flex-col items-start text-left mb-16 md:mb-0">
+                <h1 class="sm:text 4xl text-3xl mb-4 font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis?</h1>
+                <p class="mb-8 leading-relaxed text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius labore magni asperiores dolor beatae dolores quos?</p>
+
+            </div>
+
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 order-first">
+                <img src="img/imagenes4.png" alt="" class="object-cover object-center rounded ">
+
+            </div>
+
+        </div>
+
+
+        <div class="container mx-auto flex px-8 lg:py-20 py-14 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 flex flex-col items-start text-left mb-16 md:mb-0">
+                <h1 class="sm:text 4xl text-3xl mb-4 font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis?</h1>
+                <p class="mb-8 leading-relaxed text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius labore magni asperiores dolor beatae dolores quos?</p>
+
+            </div>
+
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img src="img/imagenes6.PNG" alt="" class="object-cover object-center rounded">
+
+            </div>
+
+        </div>
+    </section> 
+
+
+  <!---Seccion info-->
+    <section>
+       <h1 class="md:text-6xl text-5xl text-center font-medium md:mt-40 md:mb-80 my-28">Lorem ipsum dolor sit amet consectetur adipisg.</h1>
+
+       <div class="flex px-5 pb-24 items-center flex-col">
+
+
+        <div class="relative w-full flex justify-center items-end">
+            <img src="img/imagenes7.PNG" alt="" class="w-4/5 md:w-8/12 h-1/5 mb-10 mt-10 object-cover object-center rounded">
+            <img src="img/hero1.png" alt="" class="hidden md:block absolute  -z-10">
+        </div>
+
+        <div class="xl:w-2/3 w-full px-8 xl:px-0 mt-5 md:mt-0 flex justify-between lg:flex-row flex-col gap-10">
+
+            <div>
+                <h1 class="sm:text-4xl text-3xl mb-4 font-medium">Lorem, ipsum dolor.</h1>
+                <p class="mb-8 leading-relaxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi vel omnis, sunt officiis placeat eius alias nemo ratione.</p>
+            </div>
+
+            <div>
+                <h1 class="sm:text-4xl text-3xl mb-4 font-medium">Lorem, ipsum dolor.</h1>
+                <p class="mb-8 leading-relaxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi vel omnis, sunt officiis placeat eius alias nemo ratione.</p>
+            </div>
+
+            <div>
+                <h1 class="sm:text-4xl text-3xl mb-5 font-medium">Lorem, ipsum dolor.</h1>
+                <p class="mb-9 leading-relaxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi vel omnis, sunt officiis placeat eius alias nemo ratione.</p>
+            </div>
+
+        </div>
+       </div>  
+ 
+        <div class="container px-5 pb-24 mx-auto">
+           <div class="flex md:flex-row flex-col flex-wrap -mx-4 -mb-10">
+
+            <div class="md:w-1/2 mb-10 px-4 flex flex-col items-center justify-center">
+                <div class="h-80 lg:h-96">
+                     <img src="img/infor2.png" alt="" class="object-cover object-center w-full h-full border-4 border-white rounded-lg">
+                     
+                   </div>
+                    <h1 class="text-4xl font-medium mt-6 mb-3">Lorem, ipsum dolor.</h1>
+                    <p class="leading-relaxed text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolores itaque, laudantium similique cumque omnis cum dolore recusandae exercitationem aspernatur doloribus at dignissimos atque praesentium obcaecati aliquid?</p>
+
+            </div>
+
+
+            <div class="md:w-1/2 mb-10 px-4 flex flex-col items-center justify-center">
+                <div class="h-80 lg:h-96">
+                     <img src="img/infor4.png" alt="" class="object-cover object-center w-full h-full  border-4 border-blue-500 rounded-lg">
+                </div>
+                    <h1 class="text-4xl font-medium mt-6 mb-3">Lorem, ipsum dolor.</h1>
+                    <p class="leading-relaxed text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolores itaque, laudantium similique cumque omnis cum dolore recusandae exercitationem aspernatur doloribus at dignissimos atque praesentium obcaecati aliquid?</p>
+
+            </div>
+           </div>
+        </div>
+   </section>
+
+    <!--Seccion para dispositivos Moviles-->
+     <div class=" flex px-5 py-24 md:flex-row flex-col items-center justify-center bg-gradient-to-r via-green-900 to-black via-green-400">
+        <div class="hidden md:block lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md-mb-0">
+            <img src="img/Spotify.png" alt="" class="object-cover object-center w-full rounded">
+        </div>
+   
+
+     <div class="md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="lg:text-7xl text-6xl mb-8 font-medium text-white">Disponible para móviles </h1>
+
+        <div class="flex md:flex-row flex-col flex-wrap gap-5 justify-center items-center">             
+           <button class="btn-dowloand">
+                <img src="img/GooglePlay.png" alt="" class="w-10 h-10">
+                <span class="ml-4 flex items-start flex-col leading-none text-white">
+                    <span class="text-xs uppercase">Disponible en </span>
+                   <span class="font-medium text-xl"> Google Play</span>
+                </span>
+            </button>
+
+            <button class="btn-dowloand">
+                <img src="img/App Store.png" alt="" class="w-10 h-10">
+                <span class="ml-4 flex items-start flex-col leading-none text-white">
+                    <span class="text-xs">Consiguelo en el</span>
+                   <span class="font-medium text-xl"> App Store</span>
+                </span>
+            </button>
+         </div>
+     </div>
+</div>
+
+<!--Footer-->
+    <footer class=" bg-gradient-to-r via-green-900 to-black via-green-400">
+    <div class="container mx-auto px-5 py-8 items-center">
+        <div class="w-full flex justify-center gap-10">
+      <a href="" class="text-white cursor-pointer">
+        <i class="fa-brands fa-facebook-f text-2xl"></i>
+       </a>
+
+       <a href="" class="text-white cursor-pointer">
+        <i class="fa-brands fa-twitter text-2xl"></i>
+       </a>
+
+       <a href="" class="text-white cursor-pointer">
+        <i class="fa-brands fa-instagram text-2xl"></i>
+       </a>
+
+       <a href="" class="text-white cursor-pointer">
+        <i class="fa-brands fa-linkedin-in text-2xl"></i>
+       </a>
+    </div>
+    </div>
+    </footer>
+    
+</body>
+</html>
