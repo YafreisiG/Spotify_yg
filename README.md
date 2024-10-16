@@ -9,7 +9,7 @@ Este proyecto es una interfaz web inspirada en la plataforma de música y podcas
 
 ## Requisitos
 
-- Node.js (versión X.X.X o superior).
+- Node.js.
 - Tailwind CSS.
 - FontAwesome.
 
