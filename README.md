@@ -13,5 +13,5 @@ Este proyecto es una interfaz web inspirada en la plataforma de música y podcas
 - Tailwind CSS.
 - FontAwesome.
 
-##  Imagen
+##  Preview
 - ![image](https://github.com/user-attachments/assets/c2a150df-942c-40c1-9d3e-f26073e31235)
